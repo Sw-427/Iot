@@ -5,7 +5,7 @@ from core.views import *
 
 urlpatterns = [
 	path('admin/', admin.site.urls),
-	path('wel/', ReactView.as_view(), name="something"),
+	path('', ReactView.as_view(), name="something"),
 	path('surr/', analytics.as_view(), name="something"),
 	path('slots/', slots.as_view(), name="something"),
 ]
