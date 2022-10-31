@@ -113,6 +113,7 @@ class analytics(APIView):
             avg = x/con
         except:
             avg = 0
+	'''
         df = convert_to_dataframe(qs, fields=['uid','indate','outdate'])
         
         df['diff'] = [datetime.strptime(az['outdate'], "%H:%M:%S") - datetime.strptime(az['indate'], "%H:%M:%S") for ind, az in df.iterrows() ]
@@ -125,7 +126,7 @@ class analytics(APIView):
         plt.ylabel('Time of stay')
         plt.title('Time vs Entry')
         plt.savefig('foo.png')
-        
+        '''
         data = {
             "avgtime":avg
         }
