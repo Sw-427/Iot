@@ -107,7 +107,6 @@ class analytics(APIView):
                     x =  i.outdate - i.indate
                 else:
                     x = x + i.outdate - i.indate
-		print(x)
         try:
             avg = x/con
         except:
