@@ -1,1 +1,2 @@
-web: gunicorn iship.wsgi --log-file -
+web: gunicorn backend.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
