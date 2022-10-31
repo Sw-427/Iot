@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 # Create your views here.
 ENDPOINT = "a1a20cagimrnhk-ats.iot.us-east-1.amazonaws.com"
 CLIENT_ID = "esp_py"
-PATH_TO_CERTIFICATE = "https://github.com/Sw-427/Iot/blob/master/certs/54850eb2147a8454d87ec3a8798350e4c8444c9037015a330f6ade69028baf41-certificate.pem.crt"
+PATH_TO_CERTIFICATE = "certs/54850eb2147a8454d87ec3a8798350e4c8444c9037015a330f6ade69028baf41-certificate.pem.crt"
 PATH_TO_PRIVATE_KEY = "certs/54850eb2147a8454d87ec3a8798350e4c8444c9037015a330f6ade69028baf41-private.pem.key"
 PATH_TO_AMAZON_ROOT_CA_1 = "certs/AmazonRootCA1 (1).pem"
 MESSAGE = "Hello World"
