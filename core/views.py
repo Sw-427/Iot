@@ -97,18 +97,19 @@ class slots(APIView):
 class analytics(APIView):
     def get(self, request):
         qs = iot.objects.all()
+	print("111a")
         global x
         con = 0
         x = NULL
         for i in qs:
+	    print("111b"+i.indate)
             if i.outdate != i.indate:
                 con = con +1
                 if x is NULL:
                     x =  i.outdate - i.indate
                 else:
                     x = x + i.outdate - i.indate
-                i.indate = i.indate.strftime("%H:%M:%S")
-                i.outdate = i.outdate.strftime("%H:%M:%S")
+		print(x)
         try:
             avg = x/con
         except:
