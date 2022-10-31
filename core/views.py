@@ -18,7 +18,7 @@ from time import gmtime, strftime
 from django.db.models.functions import Now
 import matplotlib
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 # Create your views here.
 ENDPOINT = "a1a20cagimrnhk-ats.iot.us-east-1.amazonaws.com"
