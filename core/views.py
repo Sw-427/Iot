@@ -100,15 +100,15 @@ class analytics(APIView):
         global x
         con = 0
         x = NULL
-        for i in qs:
-	    if i.outdate != i.indate:
-		con = con +1
-		if x is NULL:
-		    x =  i.outdate - i.indate
-		else:
-		    x = x + i.outdate - i.indate
-		print(x)
-        try:
+	for i in qs:
+		if i.outdate != i.indate:
+			con = con +1
+			if x is NULL:
+				x =  i.outdate - i.indate
+			else:
+				x = x + i.outdate - i.indate
+			print(x)
+	try:
             avg = x/con
         except:
             avg = 0
